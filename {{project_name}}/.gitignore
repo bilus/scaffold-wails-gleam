@@ -1,0 +1,11 @@
+# Wails build output
+desktop/build/
+!desktop/build/darwin/entitlements.plist
+
+# Wails-generated frontend bindings and dist
+desktop/frontend/
+
+# Gleam build artifacts and tooling
+frontend/build/
+frontend/.lustre/
+frontend/dist/

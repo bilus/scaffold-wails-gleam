@@ -1,0 +1,11 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "{{project_name}}",
+  "outputfilename": "{{project_name}}",
+  "frontend:install": "cd ../frontend && gleam deps download",
+  "frontend:build": "cd ../frontend && gleam run -m lustre/dev build && mkdir -p ../desktop/frontend/dist && cp -r ../frontend/dist/* ../desktop/frontend/dist/",
+  "author": {
+    "name": "{{author_name}}",
+    "email": "{{author_email}}"
+  }
+}
