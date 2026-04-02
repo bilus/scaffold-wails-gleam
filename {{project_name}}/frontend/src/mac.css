@@ -1,0 +1,39 @@
+/* macOS-native base styles */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: rgba(0, 122, 255, 0.2);
+}
+
+/* Thin macOS-style scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Markdown typography */
+.mac-markdown h1 { font-size: 1.25rem; font-weight: 700; margin: 0.75rem 0 0.25rem; }
+.mac-markdown h2 { font-size: 1rem; font-weight: 600; margin: 0.5rem 0 0.25rem; }
+.mac-markdown h3 { font-size: 0.875rem; font-weight: 600; margin: 0.5rem 0 0.25rem; }
+.mac-markdown p { margin: 0.25rem 0; }
+.mac-markdown ul, .mac-markdown ol { margin: 0.25rem 0; padding-left: 1.25rem; }
+.mac-markdown li { margin: 0.1rem 0; }
+.mac-markdown code { font-family: "SF Mono", ui-monospace, monospace; font-size: 0.75rem; background: rgba(0,0,0,0.04); padding: 0.1rem 0.3rem; border-radius: 3px; }
+.mac-markdown pre { background: rgba(0,0,0,0.04); padding: 0.5rem; border-radius: 4px; overflow-x: auto; margin: 0.5rem 0; }
+.mac-markdown pre code { background: none; padding: 0; }
+.mac-markdown a { color: #007AFF; text-decoration: none; }
+.mac-markdown a:hover { text-decoration: underline; }
+.mac-markdown blockquote { border-left: 3px solid rgba(0,0,0,0.1); padding-left: 0.75rem; color: #86868b; margin: 0.25rem 0; }
