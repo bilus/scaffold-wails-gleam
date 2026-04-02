@@ -20,7 +20,7 @@ pub fn disclosure(
         html.span(
           [
             attribute.class("text-xs text-mac-text-secondary mr-1.5 inline-block"),
-            attribute.style([#("transform", case expanded {
+            attribute.styles([#("transform", case expanded {
               True -> "rotate(90deg)"
               False -> "rotate(0deg)"
             }), #("transition", "transform 0.15s ease")]),

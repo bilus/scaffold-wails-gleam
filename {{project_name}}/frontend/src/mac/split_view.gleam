@@ -11,7 +11,7 @@ pub fn split_view_3(
 ) -> Element(msg) {
   html.div(
     [
-      attribute.style([
+      attribute.styles([
         #("display", "grid"),
         #(
           "grid-template-columns",

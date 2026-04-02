@@ -8,7 +8,7 @@ pub fn badge(label: String, bg: String, fg: String) -> Element(msg) {
       attribute.class(
         "inline-block rounded-full px-2 py-0.5 text-xs font-medium",
       ),
-      attribute.style([#("background-color", bg), #("color", fg)]),
+      attribute.styles([#("background-color", bg), #("color", fg)]),
     ],
     [html.text(label)],
   )
